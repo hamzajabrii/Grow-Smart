@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="@drawable/bgk"
+    >
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Vous êtes prêt a s'inscrire ?"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_login"
+        android:layout_marginTop="150dp"
+        android:hint="  Adresse émail"/>
+
+    <EditText
+        android:id="@+id/txtLogin"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_login"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginTop="5dp"
+        android:hint="  Nom_d_utilisateur"/>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/txtLogin"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/NomPrenom">
+
+        <EditText
+            android:id="@+id/txtNom"
+            android:layout_width="148dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txtLogin"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/input_login"
+            android:hint="  Nom"/>
+
+        <EditText
+            android:id="@+id/txtPrenom"
+            android:layout_width="148dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/input_login"
+            android:hint="  Prénom"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Gender"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/NomPrenom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        >
+
+        <RadioGroup
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rHomme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Homme"
+                android:width="148dp"
+                />
+            <RadioButton
+                android:id="@+id/rFemme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Femme"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtPassword1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Gender"
+        android:background="@drawable/input_login"
+        android:hint="  Choisir mot de passe"
+        android:layout_marginTop="5dp"
+        android:password="true"/>
+    <EditText
+        android:id="@+id/txtPassword2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtPassword1"
+        android:background="@drawable/input_login"
+        android:hint="  Re-type mot de passe"
+        android:layout_marginTop="5dp"
+        android:password="true"/>
+
+    <Button
+        android:id="@+id/btnSinscrire"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/costum_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtPassword2"
+        android:layout_marginTop="40dp"
+        android:text="S'inscrire"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProblem"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Postuler votre problème"
+       android:textSize="20dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/txtTitreProb"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Titre de probleme"
+        android:background="@drawable/input_login"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/txtDescriptionProb"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:hint="Description de probleme"
+        android:background="@drawable/input_login"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/btnAddProblem"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtPasswordSignIn"
+        android:layout_marginTop="10dp"
+        android:text="Publier"
+        android:background="@drawable/costum_button"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+</LinearLayout>

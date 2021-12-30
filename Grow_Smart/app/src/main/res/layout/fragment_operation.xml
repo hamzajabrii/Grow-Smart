@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OperationFragment"
+    android:padding="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service GrowSmart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:layout_marginTop="100dp"
+    >
+
+<LinearLayout
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginRight="60dp"
+
+    >
+
+    <ImageButton
+        android:id="@+id/OkBt"
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="3dp"
+        android:src="@drawable/plant1"
+        android:background="@drawable/circle"
+        android:onClick="onClick"
+        tools:ignore="OnClick"
+        />
+    <TextView
+        android:id="@+id/txtPlante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcul quantité \n         plante"
+        android:layout_below="@+id/OkBt"
+        android:layout_marginTop="5dp"/>
+</LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/btnEngrais"
+            android:layout_marginTop="30dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:elevation="3dp"
+            android:src="@drawable/corn"
+            android:background="@drawable/circle"
+            android:onClick="onClick"
+            tools:ignore="OnClick" />
+        <TextView
+            android:id="@+id/txtEngrais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcul quantité \n        Engrais"
+            android:layout_below="@+id/OkBt"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+</RelativeLayout>

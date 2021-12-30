@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="10dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="30dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp">
+        <ImageView
+            android:id="@+id/imgUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user"/>
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            >
+        <TextView
+            android:id="@+id/DateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="Date and Time"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"/>
+    <TextView
+        android:id="@+id/txtTitreArticle"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Titre Article"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtDescriptionArticle"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="text de l'article"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="14dp"
+        />
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtNbCommentaires"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 Commentaires"
+            android:textSize="10dp"
+            />
+        </LinearLayout>
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="right"
+           >
+        <TextView
+            android:id="@+id/txtViewMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ voir plus"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            />
+       </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

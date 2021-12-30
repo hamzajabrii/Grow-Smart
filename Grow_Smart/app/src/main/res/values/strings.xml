@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GrowSmart</string>
+    <string name="title_home">Accueil</string>
+    <string name="title_dashboard">Forum</string>
+    <string name="title_notifications">Opérations</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

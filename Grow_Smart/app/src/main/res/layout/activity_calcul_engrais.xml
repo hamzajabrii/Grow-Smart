@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculQtePlante">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Calcul quantité des engrais"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtTitre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="0dp"/>
+
+    <LinearLayout
+        android:id="@+id/LSurface"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp">
+
+        <EditText
+            android:id="@+id/txtSurface"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txtTitre"
+            android:background="@drawable/input_login"
+            android:hint="Surface de la terre"
+            android:numeric="integer"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txtHectar"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/txtSurface"
+            android:text="Hectar"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerPlante"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/LSurface"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_login"
+        android:textAlignment="center"
+        />
+    <Spinner
+        android:id="@+id/spinnerMaladie"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spinnerPlante"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_login"
+        android:textAlignment="center"
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/Lbutton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/LSurface"
+        android:layout_marginTop="120dp">
+
+        <Button
+            android:id="@+id/btnCalcul"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerPlante"
+            android:background="@drawable/costum_button"
+            android:text="Calculer"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerPlante"
+            android:layout_toRightOf="@+id/btnCalcul"
+            android:background="@drawable/costum_button"
+            android:text="Annuler"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtRes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/Lbutton"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        />
+
+</RelativeLayout>
